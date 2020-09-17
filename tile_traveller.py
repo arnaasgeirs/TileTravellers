@@ -1,16 +1,33 @@
 #Við höfum hefur leikborð sem er 3x3  
-#Forrit tilkynnir leikmanni hvert hann getur ferðast miðað við hvar hann er
-    #Gefið er að leikmaður byrjar í 1,1 á leikborði
-#Forrit tekur við input átt, ber saman við staðsetningu, og tilkynnir hvert ferðast
-    #ef röng átt er valin eru skilaboð um villu send tilbaka
+#Gefið er hvar leikmaður byrjar í 1,1 á leikborði
+#Forrit tilkynnir leikmanni hvert hann getur ferðast 
+#leikmaður velur, forrit tekur val, ef það er ógild átt, er það tilkynnt
+#ef valið er gilt, tilkynnir forrit hvert hann getur ferðast næst
+
+x = 1
+y = 1
+
+if_won = False
+
+#direction = input("You can travel: (N)orth.")
+
+def direction(x,y):
+    if x == 1 and y == 1:
+    result = "You can travel: (N)orth."
+    return result
+
+if move == "N" or move == "n":
+    move = input("You can travel: (N)orth or (E)ast or (S)outh.")
+else:
+    print("Not a valid direction!")
+
+#fall sem tékkar hvort unnið
+
+while not if_won:
+    #tékkar direction
+    #input("")
+else:
+    print("Victory")
 
 
-def direction():
-
-def can_travel():
-
-
-for i in range(1,4):
-    for j in range(1,4):
-        #byrjar í i, j (1,1)
-        #forrit tilkynnir hvert getur farið
+"""
